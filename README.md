@@ -5,3 +5,4 @@
 
 # Authors 
 - Sergio Lopez 
+- Sam Barrow
