@@ -6,3 +6,4 @@
 # Authors 
 - Sergio Lopez 
 - Sam Barrow
+-Ayla Dillis
