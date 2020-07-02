@@ -1,43 +1,52 @@
 $(document).ready(function () {
 
-    function setCookie(cname, cvalue) {
-        document.cookie = cname + "=" + cvalue + ";SameSite: None, Secure";
-    }
+    // $(document).on("click", ".search-button", getZillowInfo);
 
-    $(document).on("click", ".search-button", getZillowInfo);
+    // function initMap() {
+    //     var map = new google.maps.Map(document.getElementById("map"), {
+    //         zoom: 8,
+    //         center: { lat: 35.717, lng: 139.731 }
+    //     });
+    // }
 
-    function getZillowInfo() {
-        var settings = {
-            "crossDomain": true,
-            "headers": {
-                "accept": "application/json",
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Credentials": "true",
-            },
-            "withCredentials": "true",
-            url: "https://www.zillow.com/webservice/GetSearchResults.htm?zws-id=<ZWSID>&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA",
-            dataType: 'json',
-            crossDomain: "true",
-            xhrFields: {
-                withCredentials: true
-            },
-            dataType: "jasonp",
-            method: "GET"
+    // initMap();
+
+    // function getZillowInfo() {
+
+    //     var cityName = $(this).text();
+    //     var address = "9241 13th Ave SW"
+    //     var proxy = "https://cors-anywhere.herokuapp.com/";
+    //     var queryURL = proxy + "https://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1hvnpswvt3f_39zrb&address=" + address + "&citystatezip=" + cityName;
+
+
+    //     $.ajax({
+    //         type: "GET",
+    //         url: queryURL
+    //       }).then((res) => {
+    //         console.log(res);
+    //       });
+
+    // }
+
+    var lat = 37.773972;
+    var lng = -122.431297;
+
+    var mapOptions = {
+        zoom: 8,
+        mapTypeId: 'roadmap',
+        center: {
+            lat: 37.773972,
+            lng: -122.431297
         }
-        console.log("working");
-        // var cityName = $(this).text();
-        // var address = "9241 13th Ave SW"
-        var proxy = "https://cors-anywhere.herokuapp.com/";
-        // var queryURL = "https://www.zillow.com/webservice/GetSearchResults.htm?zws-id=<ZWSID>&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA"
+    };
 
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-        $.ajax({
-            type: "GET",
-            url:
-              "https://cors-anywhere.herokuapp.com/http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1hvnpswvt3f_39zrb&address=2114 Bigelow Ave&citystatezip=Seattle, WA",
-          }).then((res) => {
-            console.log(res);
-          });
-
-    }
+    new google.maps.Marker({
+        position: {
+            lat: lat,
+            lng: lng,
+        },
+        map: map
+    });
 });
