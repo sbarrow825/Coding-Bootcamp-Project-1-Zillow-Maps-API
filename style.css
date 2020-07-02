@@ -7,7 +7,6 @@ body {
     color: white;
 }
 
-<<<<<<< HEAD
 .material-icons.md-48 {
     font-size: 55px;
     color: black;
@@ -15,15 +14,11 @@ body {
 }
 
 
-
-=======
 #home-btn {
     background-color: rgb(0, 172, 0);
     color: white;
 }
 
-
->>>>>>> 5ad4823bd08f152db934da11baff34163b16ec1f
 #name {
     font-weight: bolder;
     font-size: 1cm;
