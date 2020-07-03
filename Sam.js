@@ -14,7 +14,7 @@ $(document).ready(function () {
     var lng = -122.425080;
 
     var mapOptions = {
-        zoom: 8,
+        zoom: 15,
         mapTypeId: 'roadmap',
         center: {
             lat: lat,
@@ -44,6 +44,7 @@ $(document).ready(function () {
     }
     
     $.ajax(settings).done(function (response) {
+        console.log("made it")
         for (i = 0; i <= response.listings.length - 1; i += 1) {
             var newLat = response.listings[i].latitude;
             var newLng = response.listings[i].longitude;
