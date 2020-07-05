@@ -31,8 +31,10 @@
                 </div>
                 <!-- Beginning of row 2 on col 1 Map from api   -->
                 <div class='row'>
-                  <img src="http://ontheworldmap.com/usa/city/san-francisco/san-francisco-street-map.jpg" class="img-fluid relative" alt="Responsive image">
+                  <div id="map"></div>
                 </div>
+                <textarea id="address"></textarea>
+                <button id="search-button">Search</button>
             </div>
             <!-- Beginning of col 2 -->
             <div  id="response-cards" class="col-4">
@@ -61,5 +63,13 @@
 
     <!-- Rresult js link  -->
     <script src="result-page.js"> </script>
+
+    <!-- API Related Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi3dzreMrxNzmaHrULhs_SCJRMpzt8FbE
+    &callback=">
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   </body>
 </html>
