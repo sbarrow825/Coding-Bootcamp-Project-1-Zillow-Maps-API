@@ -32,3 +32,10 @@ div.form-group {
     right:auto; 
     bottom:auto; 
 }
+
+.button-page {
+    display: block;
+  }
+  .search-page {
+    display: none;
+  }

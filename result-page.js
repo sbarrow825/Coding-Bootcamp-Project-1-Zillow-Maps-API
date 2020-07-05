@@ -45,3 +45,7 @@ method: "GET"
     }
 })   
 
+$(function(){
+    $(localStorage.clickedDiv).hide();
+ });
+
