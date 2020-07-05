@@ -2,6 +2,7 @@ console.log("Hello");
 
 const searchTerm = document.querySelector("#srch-trm");
 const searchButton = document.querySelector("#find-address");
+const homeButton = document.querySelector("#home-button");
 const buttonPage = document.querySelector(".button-page");
 const searchPage = document.querySelector(".search-page");
 
@@ -15,11 +16,9 @@ searchButton.addEventListener("click", function(event) {
   searchPage.setAttribute("style", "display: block");
 });
 
-
-// const searchTerm = document.getElementById("srch-term").value;
-// const search = document.getElementById("search");
-
-// search.addEventListener("click", function(event){
-//     event.preventDefault();
-//     console.log(searchTerm);
-// })
+homeButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log(address);
+    buttonPage.style.display = "block";
+    searchPage.style.display = "none";
+  });
