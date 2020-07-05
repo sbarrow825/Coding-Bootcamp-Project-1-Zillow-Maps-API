@@ -21,16 +21,17 @@
         <a id="name" class="navbar-brand" href="#"><i class="material-icons md-48">blur_on</i>Property Mover</a>
         <!-- <button type="button" class="btn btn-success"><i class="material-icons">home</i>Home</button> -->
       </nav>
+      <!-- search bar -->
+      <div class = "button-page">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-<!-- search bar -->
 <div class="form-group">      
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="input-group">
-                    <form class="pure-form">
-                         <input type="text" class="pure-input-rounded" id="srch-term"/> 
-                               <button id="search" type="button" class="btn btn-success">Search</button>
+                    <form id = "search-button" class="pure-form">
+                         <input type="text" class="pure-input-rounded" id="srch-trm"/> 
+                               <button id="find-address" type="submit" class="btn btn-success">Search</button>
                                 <div class="input-group-append-rounded">
                                 <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Commute</button>
                                 <div class="dropdown-menu">
@@ -55,6 +56,7 @@
                       </div> 
                       </div>
                     </form> 
+                  
                     </div>
                 </div>
             </div>
@@ -107,6 +109,54 @@
           <p class="card-text">Property Mover was founded around the notion that finding a place to live relative to where you work or attend shcool can be searched in one place easily!</p>
         </div>
       </div>
+
+      </div>
+
+    <!-- results page sergio made-->
+    <div class="search-page">
+      <div class="container">
+        <div class="row">
+            <!-- Beginning of col 1 -->
+            
+            
+            <div class="col-8">
+
+                <!-- Beginning of row 1 on col 1 Navigation bar  -->
+                <!-- <div class='row m-2'>
+                  <div class="col-6"> -->
+                  <!-- Logo here -->
+                  <!-- <img src="ex_img_1.png" class="card-img-top" alt="...">
+                  </div>
+                  <div class="col-6"> -->
+                  <!-- home button -->
+                  <!-- <div class="button-secondary pure-button">Home</div>
+                  </div>
+                </div> -->
+
+                <!-- Beginning of row 2 on col 1 Map from api   -->
+                <div class='row'>
+                  <img src="http://ontheworldmap.com/usa/city/san-francisco/san-francisco-street-map.jpg" class="img-fluid relative" alt="Responsive image">
+                </div>
+            </div>
+            <!-- Beginning of col 2 -->
+            <div  id="response-cards" class="col-4">
+              <!-- Beginning Card 1 -->
+              <!-- <div class="card m-2" style="width: 18rem;">
+                <a href="#" class="btn btn-info">
+                  <img src="..." class="card-img-top" alt="...">
+                  Go somewhere
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div> -->
+             
+            </div>
+        </div>
+    </div>
+  </div>
+    <!-- </div> -->
     <script src="script.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
