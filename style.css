@@ -36,6 +36,11 @@ div.form-group {
 .button-page {
     display: block;
   }
-  .search-page {
+  /* .search-page {
     display: none;
-  }
+  } */
+
+#mapid {
+    height: 1000px;
+    width: 1000px;
+}
