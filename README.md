@@ -1,6 +1,7 @@
 # Property Mover
 
 ![Web screenshot](webscreenshot.png)
+![Web screenshot](https://media.giphy.com/media/RgtzggWcC8GcHW6HnT/giphy.gif)
 
 ## Table of Content
 - Objective
