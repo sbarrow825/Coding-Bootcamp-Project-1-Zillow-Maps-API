@@ -33,6 +33,23 @@ div.form-group {
     bottom:auto; 
 }
 
+@media screen and (max-width: 980px) {
+    /* Resizing search bar  */
+    div.form-group { 
+    top:75px;
+    left:25%;
+    } 
+}
+
+@media screen and (max-width: 640px) {
+    /* Resizing search bar  */
+    div.form-group {
+    top:50px;
+    left:5%;
+    } 
+}
+
+
 .button-page {
     display: block;
   }
