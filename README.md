@@ -20,6 +20,7 @@ Project 1
 
 ## Screenshots
 
+
 ## Deploy Link
 
 * [See Live Site](https://sbarrow825.github.io/Coding-Bootcamp-Project-1-Zillow-Maps-API/)
