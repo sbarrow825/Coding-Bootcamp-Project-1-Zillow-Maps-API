@@ -109,3 +109,7 @@ function getSearchReults() {
         })
     });
 }
+$(function(){
+    $(localStorage.clickedDiv).hide();
+ });
+
