@@ -28,7 +28,7 @@ div.form-group {
     position:absolute;
     z-index:9999999;
     top:150px; 
-    left:475px; 
+    left:530px; 
     right:auto; 
     bottom:auto; 
 }
@@ -53,6 +53,11 @@ div.form-group {
 .button-page {
     display: block;
   }
-  .search-page {
+  /* .search-page {
     display: none;
-  }
+  } */
+
+#mapid {
+    height: 1000px;
+    width: 1000px;
+}
