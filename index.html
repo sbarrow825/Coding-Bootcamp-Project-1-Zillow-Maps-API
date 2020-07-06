@@ -30,13 +30,14 @@
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 <div class="form-group">      
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
+        <!-- <div class="row"> -->
+            <!-- <div class="col-md-6"> -->
                 <div class="input-group">
                     <form id = "search-button" class="pure-form">
-                         <input type="text" class="pure-input-rounded" id="srch-trm"/> 
+                         <input type="text" class="input-group-text" id="srch-trm"/> 
                                <button id="find-address" type="submit" class="btn btn-success">Search</button>
-                                <div class="input-group-append-rounded">
+
+                                <!-- <div class="input-group-append-rounded">
                                 <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Commute</button>
                                 <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">none</a>
@@ -48,9 +49,21 @@
                                 <a class="dropdown-item" href="#">50 minutes</a>
                                 <a class="dropdown-item" href="#">1 hour</a>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="input-group-append-rounded">
+                        <select name="commute-time" id="commute-time">
+                          <option value="none">None</option>
+                          <option value="5minites">5 minutes</option>
+                          <option value="10minites">10 minutes</option>
+                          <option value="15minites">15 minutes</option>
+                          <option value="20minites">20 minutes</option>
+                          <option value="30minites">30 minutes</option>
+                          <option value="40minites">40 minutes</option>
+                          <option value="50minites">50 minutes</option>
+                          <option value="1hour">1 hour</option>
+                        </select>
+
+                        <!-- <div class="input-group-append-rounded">
                           <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Price</button>
                           <div class="dropdown-menu">
                           <a class="dropdown-item" href="#">none</a>
@@ -58,12 +71,21 @@
                           <a class="dropdown-item" href="#">$$</a>
                           <a class="dropdown-item" href="#">$$$</a>
                       </div> 
-                      </div>
+                      </div> -->
+
+                      <select name="commute-time" id="commute-time">
+                        <option value="none">None</option>
+                        <option value="#">$</option>
+                        <option value="$$">$$</option>
+                        <option value="$$$">$$$</option>
+                     
+                      </select>
+
                     </form> 
                   
                     </div>
-                </div>
-            </div>
+                <!-- </div> -->
+            <!-- </div> -->
         </div>
     </div>
 <!-- image carousel -->
