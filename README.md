@@ -17,13 +17,9 @@ Build an application where the user is able to find a place to live within a cer
 
 If the user enters the location of their job, as well as their ideal commute time then Property Mover will return a listing of appropriate housing options. Under each option will be the driving distance it takes for the user to get from their work to home.
 
-<<<<<<< HEAD
 
 ## Deploy Link
-=======
-## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
->>>>>>> 192d4b35184040f3fee86f255095a0e5cdfb94b2
+https://sbarrow825.github.io/Coding-Bootcamp-Project-1-Zillow-Maps-API/
 
 ```
 $ git clone git@github.com:sbarrow825/Coding-Bootcamp-Project-1-Zillow-Maps-API.git
