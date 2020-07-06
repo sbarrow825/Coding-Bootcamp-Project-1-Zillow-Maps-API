@@ -28,7 +28,14 @@ div.form-group {
     position:absolute;
     z-index:9999999;
     top:150px; 
-    left:530px; 
+    left:475px; 
     right:auto; 
     bottom:auto; 
 }
+
+.button-page {
+    display: block;
+  }
+  .search-page {
+    display: none;
+  }

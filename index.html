@@ -14,40 +14,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- link to google font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Leaflet stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <title>Property Mover</title>
   </head>
   <body>
+    <div class = "button-page">
+
     <nav class="navbar navbar-light bg-light">
         <a id="name" class="navbar-brand" href="#"><i class="material-icons md-48">blur_on</i>Property Mover</a>
-        <button type="button" class="btn btn-success"><i class="material-icons">home</i>Home</button>
+        <!-- <button type="button" class="btn btn-success"><i class="material-icons">home</i>Home</button> -->
       </nav>
+      <!-- search bar -->
+      <!-- <div class = "button-page"> -->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-<!-- search bar -->
 <div class="form-group">      
-    <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-12">
                 <div class="input-group">
-                    <form class="pure-form">
-                         <input type="text" class="pure-input-rounded" id="srch-term"/>
-                            </form>
-                                <div class="input-group-append-rounded">
-                                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Commute</button>
-                                <button type="button" class="btn btn-success">Search</button>
-                                <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">5 minutes</a>
-                                <a class="dropdown-item" href="#">10 minutes</a>
-                                <a class="dropdown-item" href="#">20 minutes</a>
-                                <a class="dropdown-item" href="#">30 minutes</a>
-                                <a class="dropdown-item" href="#">40 minutes</a>
-                                <a class="dropdown-item" href="#">50 minutes</a>
-                                <a class="dropdown-item" href="#">1 hour</a>
-                            </div>
-                        </div>
-                    </div>
+                    <form id = "search-button" class="pure-form">
+                         <input type="text" class="input-group-text" id="srch-trm" placeholder="enter an address"/> 
+
+                                  <select name="commute-time" id="commute-time">
+                                    <option value="none">None</option>
+                                    <option value="5minites">5 minutes</option>
+                                    <option value="10minites">10 minutes</option>
+                                    <option value="15minites">15 minutes</option>
+                                    <option value="20minites">20 minutes</option>
+                                    <option value="30minites">30 minutes</option>
+                                    <option value="40minites">40 minutes</option>
+                                    <option value="50minites">50 minutes</option>
+                                    <option value="1hour">1 hour</option>
+                                  </select>
+
+                                  <select name="commute-time" id="commute-time">
+                                    <option value="none">None</option>
+                                    <option value="#">$</option>
+                                    <option value="$$">$$</option>
+                                    <option value="$$$">$$$</option>
+                                  </select>
+                                  <button id="find-address" type="submit" class="btn btn-success">Search</button>
+
+                              </form> 
+                          </div>
                 </div>
             </div>
-        </div>
     </div>
 <!-- image carousel -->
         <ol class="carousel-indicators">
@@ -57,24 +68,24 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="ex_img_1.png" class="d-block w-100" alt="example img">
+            <img src="slide_2.png" class="d-block w-100" alt="example img">
             <div class="carousel-caption d-none d-md-block">
               <h5>Welcome!</h5>
               <p>Use property mover to find the perfect apartment with the best commute time!</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="ex_img_2.png" class="d-block w-100" alt="example img">
+            <img src="slide_3.png" class="d-block w-100" alt="example img">
             <div class="carousel-caption d-none d-md-block">
               <h5>How to use</h5>
               <p>Start by entering a location where you would like to rout from</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="ex_img_3.png" class="d-block w-100" alt="example img">
+            <img src="slide_1.png" class="d-block w-100" alt="example img">
             <div class="carousel-caption d-none d-md-block">
               <h5>Select your ideal commute time</h5>
-              <p>Select from the drop down menu how long you would like your commute to be</p>
+              <p>Select from the drop down menu how long you would like your commute to be as well as what price range you would like</p>
             </div>
           </div>
         </div>
@@ -89,18 +100,81 @@
       </div>
       <div class="card text-center">
         <div class="card-header">
-          About us
+          Our Mission
         </div>
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <h5 class="card-title">Decicated to brining you accurate commute times alongside ideal property listings</h5>
+          <p class="card-text">Property Mover was founded around the notion that finding a place to live relative to where you work or attend shcool can be searched in one place easily!</p>
         </div>
       </div>
+
+      </div>
+
+    <!-- results page sergio made-->
+    <div class="search-page">
+      <nav class="navbar navbar-light bg-light">
+        <a id="name" class="navbar-brand" href="#"><i class="material-icons md-48">blur_on</i>Property Mover</a>
+        <button id="home-button" type="submit" class="btn btn-success"><i class="material-icons">home</i>Home</button>
+      </nav>
+      <div class="container">
+        <div class="row">
+            <!-- Beginning of col 1 -->
+            
+            
+            <div class="col-8">
+
+                <!-- Beginning of row 1 on col 1 Navigation bar  -->
+                <!-- <div class='row m-2'>
+                  <div class="col-6"> -->
+                  <!-- Logo here -->
+                  <!-- <img src="ex_img_1.png" class="card-img-top" alt="...">
+                  </div>
+                  <div class="col-6"> -->
+                  <!-- home button -->
+                  <!-- <div class="button-secondary pure-button">Home</div>
+                  </div>
+                </div> -->
+
+                <!-- Beginning of row 2 on col 1 Map from api   -->
+                <div class='row'>
+                  <div id="map"></div>
+                </div>
+            </div>
+            <!-- Beginning of col 2 -->
+            <div  id="response-cards" class="col-4">
+              <!-- Beginning Card 1 -->
+              <!-- <div class="card m-2" style="width: 18rem;">
+                <a href="#" class="btn btn-info">
+                  <img src="..." class="card-img-top" alt="...">
+                  Go somewhere
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div> -->
+             
+            </div>
+        </div>
+    </div>
+  </div>
+    <!-- </div> -->
     <script src="script.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- API related scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi3dzreMrxNzmaHrULhs_SCJRMpzt8FbE
+    &callback=">
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <!-- Leaflet script -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
   </body>
 </html>
