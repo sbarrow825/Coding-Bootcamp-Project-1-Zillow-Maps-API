@@ -2,6 +2,7 @@
 
 ![Web screenshot](webscreenshot.png)
 ![Web screenshot](https://media.giphy.com/media/RgtzggWcC8GcHW6HnT/giphy.gif)
+![Web screenshot](https://media.giphy.com/media/TiD6bqtO7e0E2KxUDt/giphy.gif)
 
 ## Table of Content
 - Objective
@@ -33,6 +34,8 @@ Then open in your preferred text editor:
 ### APIs
 * [Realtymole](https://www.realtymole.com/api)
 * [GoogleMapAPI](https://developers.google.com/maps/documentation/javascript/get-api-key)
+* [Distance Matrix API](https://cloud.google.com/maps-platform/routes/?utm_source=google&utm_medium=cpc&utm_campaign=FY18-Q2-global-demandgen-paidsearchonnetworkhouseads-cs-maps_contactsal_saf&utm_content=text-ad-none-none-DEV_c-CRE_289050149274-ADGP_Hybrid+%7C+AW+SEM+%7C+SKWS+~+Distance+Matrix+API-KWID_43700035908080913-aud-581578347266:kwd-327115461770-userloc_9032071&utm_term=KW_distance%20matrix%20api-ST_distance+matrix+api&gclid=Cj0KCQjwl4v4BRDaARIsAFjATPm3PH2eBYIo85KxUULohiCbu4Zs3o-EsdVQ5Rh4wdywkihqFfWQggAaApdIEALw_wcB)
+* [Google Maps Geocoding API‎](https://developers.google.com/maps/documentation/geocoding/start)
 
 ### Technology
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
