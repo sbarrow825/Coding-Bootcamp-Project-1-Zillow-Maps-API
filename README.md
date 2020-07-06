@@ -1,37 +1,58 @@
-# Coding-Bootcamp-Project-1-Zillow-Maps-API
+# Property Mover
 
-Project 1
+![Web screenshot](webscreenshot.png)
 
-## Tools
+## Table of Content
+- Objective
+- Getting Started
+- Requirements
+- Deploy Link
+- Authors
 
-* Zoom
-* Slack
-* GitHub
-* GitLab
-* BootCamp Code Drills
-* Slack Overflow
-* Google
-* Youtube
-* w3School
-* MDN Webdocs
-* Google API
 
-## Code Snippets
+## Objective
+Build an application where the user is able to find a place to live within a certain price range, compar any distance and commute time.
 
-## Screenshots
+If the user enters the location of their job, as well as their ideal commute time then Property Mover will return a listing of appropriate housing options. Under each option will be the driving distance it takes for the user to get from their work to home.
 
-## Deploy Link
+## Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-* [See Live Site](https://sbarrow825.github.io/Coding-Bootcamp-Project-1-Zillow-Maps-API/)
+```
+$ git clone git@github.com:sbarrow825/Coding-Bootcamp-Project-1-Zillow-Maps-API.git
+$ cd Coding-Bootcamp-Project-1-Zillow-Maps-API.git
+```
+Then open in your preferred text editor:
+- [vim](https://www.vim.org/) 
+- [emmacs](https://www.gnu.org/software/emacs/)
+- [visual studio code](https://code.visualstudio.com/) 
 
-## Authors
+## Requirements
 
-Sergio C Lopez Murillo
-Samuel Levi Barrow
-Ayla Dillis
+### APIs
+* [Realtymole](https://www.realtymole.com/api)
+* [GoogleMapAPI](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
+### Technology
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScrip)
+
+### Library
+CSS Libary
+* [Bootstrap](https://getbootstrap.com/)
+* [Pure](https://purecss.io/buttons/)
+
+Js  Libary
+* [Leaflet](https://leafletjs.com/)
 * [JQuery](https://jquery.com/)
-* [GoogleMapAPI](https://developers.google.com/maps/documentation/javascript/get-api-key)
+
+## Deploy Link
+* [See Live Site](https://sbarrow825.github.io/Coding-Bootcamp-Project-1-Zillow-Maps-API/)
+
+
+
+## Authors
+- [Ayla Dills](https://github.com/ayladillis)
+- [Samuel levi](https://github.com/sbarrow825)
+- [Sergio Lopez](https://github.com/cherjios)
